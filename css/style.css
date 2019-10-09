@@ -1,0 +1,209 @@
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.header-wrap{
+   /* このラッパーはwidthだけ共通にした方がいいのか聞く */
+  width: 100%;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.inner {
+  margin: 0 auto;
+  width: 1100px;
+}
+
+.header-inner {
+  text-align: center;
+  padding: 15px 0;
+}
+
+.header-logo-img {
+  display: inline-block;
+  font-size: 26px;
+  vertical-align: middle;
+}
+
+.header-contact-btn {
+  display: inline-block;
+  font-size: 12px;
+  color: #ffffff;
+  background-color: #74cfae;
+  padding: 14px 12px;
+  box-sizing: border-box;
+  margin-left: 550px;
+  transition:  all 0.3s ease;
+}
+
+.btn-hover-effect {
+  color: #ffffff;
+  transition:  all 0.3s ease;
+}
+
+.btn-hover-effect:hover {
+  color: #333;
+  transition:  all 0.3s ease;
+}
+
+.theme-wrap {
+  padding: 300px 0 250px 0;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.theme-title {
+  font-size: 90px;
+  font-weight: 700;
+  color: #74cfae;
+}
+
+.theme-title-sub {
+  font-size: 30px;
+  color: #c0c0c0;
+}
+
+.section-abstract {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: text-bottom;
+  background-color: #75cfae;
+  padding: 50px 0 0 0;
+}
+
+.abstract-img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.abstract-text-title {
+  font-size: 24px;
+  margin-bottom: 35px;
+}
+
+.abstract-text {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  color: #ffffff;
+  padding-left: 150px;
+}
+
+.main-topic {
+  background-color: #f2f2f2;
+  padding: 60px 0 70px 0;
+}
+
+.main-topic-title {
+  font-size: 24px;
+  text-align: center;
+}
+
+.img-container {
+  padding-top: 40px;
+  width: 1100px;
+  margin: 0 auto;
+  z-index: 0;
+}
+
+.main-topic-img {
+  width: 300px;
+  height: 300px;
+  box-sizing: border-box;
+  margin-left: 100px;
+  opacity: 0.7;
+}
+
+.main-topic-img:hover {
+  opacity: 1;
+}
+
+.main-topic-img:nth-child(3n+1) {
+  margin-left: 0;
+}
+
+.main-topic-img:nth-child(n+4) {
+  margin-top: 80px;
+}
+
+/* imgのサイズは横幅300px */
+.main-topic-content-wrap {
+  padding-top: 90px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-topic-content-sentence {
+  display: inline-block;
+  width: 530px;
+  text-align: center;
+}
+
+.main-topic-content-btn {
+  padding: 14px 20px;
+  font-size: 12px;
+  background-color: #75cfae;
+  display: inline-block;
+  margin-left: 90px;
+  color: #fff;
+  vertical-align: top;
+  /* ここ何故V-alignつけないと位置ズレるのか聞く */
+}
+
+.sub-topic {
+  background-color: #4e4e4e;
+  text-align: center;
+  color: #fff;
+  padding: 70px 0;
+}
+
+.sub-topic-title {
+  font-size: 24px;
+  margin: 0 0 60px 0;
+  /* main-topic-titleと共用できる */
+}
+
+.contents {
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 180px;
+  /* ここマージン均等にとる以外に横幅変更の時にレイアウトが崩れるの避ける方法が分からない */
+}
+
+.contents:first-child {
+  margin-left: 0;
+}
+
+.sns-container {
+  padding: 200px 0;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.crafter {
+  padding: 20px 0 25px 0;
+  background-color: #75cfae;
+  color: #fff;
+}
+
+.sns-icon {
+  color: #74cfae;
+  display: inline-block;
+  font-size: 60px;
+  text-decoration: none;
+  width: 185px;
+  text-align: center;
+  padding: 20px 0;
+  transition:  all 0.3s ease;
+}
+
+.sns-icon:hover {
+  background-color: #ffffff;
+  transition:  all 0.3s ease;
+}
