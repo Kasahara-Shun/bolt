@@ -5,7 +5,6 @@
 }
 
 .header-wrap{
-   /* このラッパーはwidthだけ共通にした方がいいのか聞く */
   width: 100%;
   background-color: #ffffff;
   position: fixed;
@@ -17,6 +16,14 @@
 .inner {
   margin: 0 auto;
   width: 1100px;
+}
+
+.font-main {
+  font-family: "Lato";
+}
+
+.font-title {
+  font-family: "Raleway";
 }
 
 .header-inner {
@@ -39,6 +46,7 @@
   box-sizing: border-box;
   margin-left: 550px;
   transition:  all 0.3s ease;
+  text-decoration: none;
 }
 
 .btn-hover-effect {
@@ -52,9 +60,13 @@
 }
 
 .theme-wrap {
-  padding: 300px 0 250px 0;
   text-align: center;
   background-color: #f2f2f2;
+  width: 100%;
+}
+
+.theme-inner {
+  padding: 300px 0 250px 0;
 }
 
 .theme-title {
@@ -70,10 +82,12 @@
 
 .section-abstract {
   width: 100%;
-  margin: 0 auto;
   text-align: center;
   vertical-align: text-bottom;
   background-color: #75cfae;
+}
+
+.section-abstract-inner {
   padding: 50px 0 0 0;
 }
 
@@ -89,16 +103,25 @@
 
 .abstract-text {
   display: inline-block;
-  width: 30%;
+  width: 40%;
   vertical-align: top;
   color: #ffffff;
   padding-left: 150px;
 }
 
+.abstract-text-sentence {
+  font-size: 20px;
+}
+
 .main-topic {
   background-color: #f2f2f2;
+  width: 100%;
+}
+
+.main-topic-inner {
   padding: 60px 0 70px 0;
 }
+
 
 .main-topic-title {
   font-size: 24px;
@@ -110,6 +133,7 @@
   width: 1100px;
   margin: 0 auto;
   z-index: 0;
+  font-size: 0;
 }
 
 .main-topic-img {
@@ -118,6 +142,7 @@
   box-sizing: border-box;
   margin-left: 100px;
   opacity: 0.7;
+  text-decoration: none;
 }
 
 .main-topic-img:hover {
@@ -132,7 +157,28 @@
   margin-top: 80px;
 }
 
-/* imgのサイズは横幅300px */
+/* テスト用 */
+
+
+.img-wrap {
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 100px;
+}
+
+.img-wrap:nth-child(3n+1) {
+  margin-left: 0;
+}
+
+.img-wrap:nth-child(n+4) {
+  margin-top: 80px;
+}
+
+/* テストここまで */
+
+
+
+/*imgのサイズは横幅300px */
 .main-topic-content-wrap {
   padding-top: 90px;
   margin: 0 auto;
@@ -153,6 +199,7 @@
   margin-left: 90px;
   color: #fff;
   vertical-align: top;
+  text-decoration: none;
   /* ここ何故V-alignつけないと位置ズレるのか聞く */
 }
 
@@ -160,6 +207,9 @@
   background-color: #4e4e4e;
   text-align: center;
   color: #fff;
+}
+
+.sub-topic-inner {
   padding: 70px 0;
 }
 
@@ -181,16 +231,13 @@
 }
 
 .sns-container {
-  padding: 200px 0;
+  width: 100%;
   text-align: center;
   background-color: #f2f2f2;
 }
 
-.crafter {
-  padding: 20px 0 25px 0;
-  background-color: #75cfae;
-  color: #fff;
-  text-align: right;
+.sns-container-inner {
+  padding: 200px 0;
 }
 
 .sns-icon {
@@ -207,4 +254,19 @@
 .sns-icon:hover {
   background-color: #ffffff;
   transition:  all 0.3s ease;
+}
+
+.footer-wrap {
+  background-color: #75cfae;
+  width: 100%;
+}
+
+.footer-inner {
+  padding: 20px 0 25px 0;
+}
+
+.crafter {
+  color: #fff;
+  text-align: right;
+  padding-right: 5%;
 }
