@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 .clearfix::after{
   content: "";
   display: block;
@@ -29,16 +31,17 @@
 .header-inner {
   text-align: center;
   padding: 15px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .header-logo-img {
-  display: inline-block;
   font-size: 26px;
   vertical-align: middle;
 }
 
 .header-contact-btn {
-  display: inline-block;
   font-size: 12px;
   color: #ffffff;
   background-color: #74cfae;
@@ -78,6 +81,7 @@
 .theme-title-sub {
   font-size: 30px;
   color: #c0c0c0;
+  margin: 20px 0 0 0;
 }
 
 .section-abstract {
@@ -103,10 +107,10 @@
 
 .abstract-text {
   display: inline-block;
-  width: 40%;
+  width: 510px;
   vertical-align: top;
   color: #ffffff;
-  padding-left: 150px;
+  margin:0 0 0 80px;
 }
 
 .abstract-text-sentence {
@@ -129,9 +133,8 @@
 }
 
 .img-container {
-  padding-top: 40px;
+  margin-top: 40px;
   width: 1100px;
-  margin: 0 auto;
   z-index: 0;
   font-size: 0;
 }
@@ -157,9 +160,6 @@
   margin-top: 80px;
 }
 
-/* テスト用 */
-
-
 .img-wrap {
   text-decoration: none;
   display: inline-block;
@@ -174,14 +174,9 @@
   margin-top: 80px;
 }
 
-/* テストここまで */
-
-
-
 /*imgのサイズは横幅300px */
 .main-topic-content-wrap {
-  padding-top: 90px;
-  margin: 0 auto;
+  margin-top: 90px;
   text-align: center;
 }
 
@@ -215,19 +210,23 @@
 
 .sub-topic-title {
   font-size: 24px;
-  margin: 0 0 60px 0;
+  margin: 0 0 80px 0;
   /* main-topic-titleと共用できる */
 }
 
 .contents {
   display: inline-block;
   font-size: 16px;
-  margin-left: 180px;
+  margin: 20px 0 0 180px;
   /* ここマージン均等にとる以外に横幅変更の時にレイアウトが崩れるの避ける方法が分からない */
 }
 
 .contents:first-child {
   margin-left: 0;
+}
+
+.contents-title {
+  margin:10px 0 0 0;
 }
 
 .sns-container {
@@ -256,6 +255,10 @@
   transition:  all 0.3s ease;
 }
 
+.sns-icon-wrap {
+  display: inline-block;
+}
+
 .footer-wrap {
   background-color: #75cfae;
   width: 100%;
@@ -268,5 +271,5 @@
 .crafter {
   color: #fff;
   text-align: right;
-  padding-right: 5%;
+  margin:0 5% 0 0;
 }
