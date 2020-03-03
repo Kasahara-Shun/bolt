@@ -32,7 +32,7 @@
   text-align: center;
   padding: 15px 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -47,7 +47,6 @@
   background-color: #74cfae;
   padding: 14px 12px;
   box-sizing: border-box;
-  margin-left: 550px;
   transition:  all 0.3s ease;
   text-decoration: none;
 }
@@ -62,6 +61,10 @@
   transition:  all 0.3s ease;
 }
 
+.main {
+  margin: 70px 0 0 0;
+}
+
 .theme-wrap {
   text-align: center;
   background-color: #f2f2f2;
@@ -69,7 +72,7 @@
 }
 
 .theme-inner {
-  padding: 300px 0 250px 0;
+  padding: 250px 0 250px 0;
 }
 
 .theme-title {
@@ -143,27 +146,24 @@
   width: 300px;
   height: 300px;
   box-sizing: border-box;
-  margin-left: 100px;
   opacity: 0.7;
   text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
 }
 
 .main-topic-img:hover {
   opacity: 1;
 }
 
-.main-topic-img:nth-child(3n+1) {
-  margin-left: 0;
-}
-
-.main-topic-img:nth-child(n+4) {
-  margin-top: 80px;
-}
-
 .img-wrap {
   text-decoration: none;
   display: inline-block;
   margin-left: 100px;
+}
+
+.img-box {
+  display: inline-block;
 }
 
 .img-wrap:nth-child(3n+1) {
